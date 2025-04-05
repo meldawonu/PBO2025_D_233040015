@@ -7,30 +7,26 @@ public class KartuHasilStudi {
     private String semester;
     private double ips;
     private List<MataKuliah> daftarMataKuliah;
-
     // Constructor
     public KartuHasilStudi(String semester) {
         this.semester = semester;
         this.daftarMataKuliah = new ArrayList<>();
     }
-
     // Method untuk menambahkan mata kuliah
     public void addMataKuliah(MataKuliah mataKuliah) {
         daftarMataKuliah.add(mataKuliah);
     }
-
     // Method untuk menampilkan daftar mata kuliah
     public String display() {
         StringBuilder sb = new StringBuilder();
         sb.append("Semester: ").append(semester).append("\n");
         sb.append("Daftar Mata Kuliah:\n");
-
         for (MataKuliah mk : daftarMataKuliah) {
             sb.append(mk.display()).append("\n");
         }
         return sb.toString();
     }
-
+    
     // Method untuk menghitung IPS
     public void hitungIPS() {
         if (daftarMataKuliah.isEmpty()) {

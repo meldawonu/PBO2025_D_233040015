@@ -24,3 +24,5 @@ public class TranskripNilaiMain {
         transkrip.display(); // Tampilkan transkrip nilai
     }
 }
+
+

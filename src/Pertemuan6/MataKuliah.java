@@ -7,7 +7,6 @@ class MataKuliah {
     private String kode, nama, nilaiHuruf;
     private int sks;
     private double nilaiAngka;
-
     public MataKuliah(String kode, String nama, String nilaiHuruf, int sks) {
         this.kode = kode;
         this.nama = nama;
@@ -15,7 +14,6 @@ class MataKuliah {
         this.sks = sks;
         this.nilaiAngka = konversiNilai(nilaiHuruf);
     }
-
     private double konversiNilai(String nilaiHuruf) {
         switch (nilaiHuruf) {
             case "A": return 4.0;
@@ -28,7 +26,6 @@ class MataKuliah {
             default: return 0.0;
         }
     }
-
     public int getSks() { return sks; }
     public double getNilaiAngka() { return nilaiAngka; }
     public String display() {
